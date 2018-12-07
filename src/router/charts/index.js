@@ -5,7 +5,7 @@
 * @version      :  V_1.0
 */
 import Layout from 'layout/Layout'
-import Charts from 'views/charts'
+import Charts from 'views/charts/index'
 export default {
 
   path: '/',

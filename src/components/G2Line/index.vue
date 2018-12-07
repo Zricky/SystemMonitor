@@ -1,31 +1,50 @@
 <template>
-  <p :id="id"></p>
+  <p
+    :id="id"
+  />
 </template>
 <script>
 import G2 from '@antv/g2'
 
 export default {
-  data () {
-    return {chart: null}
-  },
   props: {
     charData: {
       type: Array,
-      default: function () {
-        return {data: []}
+      default() {
+        return {
+          data: []
+        }
       }
     },
-    id: String,
-    weight: Number,
-    height: Number
+    id: {
+      type: String,
+      default: 'G2Line'
+    },
+    weight: {
+      type: Number,
+      default: 200
+    },
+    height: {
+      type: Number,
+      default: 200
+    }
   },
-  mounted () {
+  data() {
+    return {
+      chart: null
+    }
+  },
+  mounted() {
     this.drawChart()
   },
   methods: {
-    drawChart: function () {
+    drawChart() {
       this.chart && this.chart.destory()
-      this.chart = new G2.Chart({container: this.id, weight: this.weight, height: this.height})
+      this.chart = new G2.Chart({
+        container: this.id,
+        weight: this.weight,
+        height: this.height
+      })
       this.chart.source(this.charData)
       this.chart.interval().position('year*value').color('year')
       // this.chart.scale('value', {min: 0})

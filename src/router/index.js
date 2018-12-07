@@ -4,7 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // import Layout from 'layout/Layout'
-import DashBoard from './dashboard/'
+// import DashBoard from './dashboard/'
 import Table from './table/'
 import Charts from './charts/'
 /**
@@ -20,8 +20,8 @@ import Charts from './charts/'
   }
 **/
 export const constantRouterMap = [
-  DashBoard,
-  // Charts,
+  // DashBoard,
+  Charts,
   Table
   // { path: '/login', components: () => import('@/views/login/index'), hidden: true },
   // { path: '/404', components: () => import('@/views/404'), hidden: true },

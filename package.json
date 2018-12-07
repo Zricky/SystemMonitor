@@ -14,6 +14,7 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
+    "@antv/g2": "^3.3.3",
     "axios": "0.18.0",
     "element-ui": "2.4.6",
     "js-cookie": "2.2.0",
@@ -25,7 +26,6 @@
   },
   "devDependencies": {
     "autoprefixer": "8.5.0",
-    "@antv/g2": "^3.3.3",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.6",
     "babel-helper-vue-jsx-merge-props": "2.0.3",
