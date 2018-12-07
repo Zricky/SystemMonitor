@@ -1,9 +1,9 @@
 {
-  "name": "vue-admin-template",
-  "version": "3.8.0",
-  "license": "MIT",
-  "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "name": "systemmonitor",
+  "version": "1.0.0",
+  "description": "监控 部署 开发 分析 统计 运维",
+  "author": "zhaojx <zjxshushi@gmail.com>",
+  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "autoprefixer": "8.5.0",
+    "@antv/g2": "^3.3.3",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.6",
     "babel-helper-vue-jsx-merge-props": "2.0.3",
