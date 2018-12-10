@@ -5,8 +5,8 @@
 </template>
 <script>
 import G2 from '@antv/g2'
-
 export default {
+  name: 'G2Line',
   props: {
     char_data: {
       type: Array,
@@ -39,6 +39,7 @@ export default {
   },
   methods: {
     drawChart() {
+      console.log('char_data' + this.char_data)
       this.chart && this.chart.destory()
       this.chart = new G2.Chart({
         container: this.id,
@@ -46,7 +47,7 @@ export default {
         height: this.height
       })
       this.chart.source(this.char_data)
-      this.chart.interval().position('year*value').color('year')
+      this.chart.interval().position('x*y').color('x')
       // this.chart.scale('value', {min: 0})
       // this.chart.scale('year', {range: [0, 1]})
       // this.chart.tooltip({crosshairs: {type: 'line'}})
