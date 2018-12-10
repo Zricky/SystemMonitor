@@ -8,7 +8,7 @@ import G2 from '@antv/g2'
 
 export default {
   props: {
-    charData: {
+    char_data: {
       type: Array,
       default() {
         return {
@@ -45,7 +45,7 @@ export default {
         weight: this.weight,
         height: this.height
       })
-      this.chart.source(this.charData)
+      this.chart.source(this.char_data)
       this.chart.interval().position('year*value').color('year')
       // this.chart.scale('value', {min: 0})
       // this.chart.scale('year', {range: [0, 1]})

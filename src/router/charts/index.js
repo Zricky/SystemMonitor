@@ -5,17 +5,17 @@
 * @version      :  V_1.0
 */
 import Layout from 'layout/Layout'
-import Charts from 'views/charts/index'
+// import Charts from 'views/charts/index'
 export default {
 
   path: '/',
   component: Layout,
   redirect: '/charts',
-  name: 'charts',
+  name: 'Charts',
   hidden: true,
   children: [{
     path: 'charts',
-    component: Charts
+    component: () => import('@/views/charts/index')
   }]
 
 }

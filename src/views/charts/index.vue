@@ -3,7 +3,7 @@
     :id="'c1'"
     :weight="600"
     :height="400"
-    :charData="serverData"
+    :char_data="serverData"
   />
 </template>
 
