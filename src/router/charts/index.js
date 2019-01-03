@@ -7,15 +7,13 @@
 import Layout from 'layout/Layout'
 // import Charts from 'views/charts/index'
 export default {
-
-  path: '/',
+  path: '/charts',
   component: Layout,
-  redirect: '/charts',
-  name: 'Charts',
-  hidden: true,
   children: [{
-    path: 'charts',
-    component: () => import('@/views/charts/index')
+    path: 'index',
+    name: 'Charts',
+    component: () => import('@/views/charts/index'),
+    meta: { title: '图表', icon: 'form' }
   }]
 
 }

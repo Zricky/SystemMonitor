@@ -4,9 +4,10 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // import Layout from 'layout/Layout'
-// import DashBoard from './dashboard/'
+import DashBoard from './dashboard/'
 import Table from './table/'
 import Charts from './charts/'
+import Terminal from './xterm/'
 /**
 * hidden: true                   if `hidden:true` will not show in the sidebar(default is false)
 * alwaysShow: true               if set true, will always show the root menu, whatever its child routes length
@@ -20,7 +21,8 @@ import Charts from './charts/'
   }
 **/
 export const constantRouterMap = [
-  // DashBoard,
+  Terminal,
+  DashBoard,
   Charts,
   Table
   // { path: '/login', components: () => import('@/views/login/index'), hidden: true },
