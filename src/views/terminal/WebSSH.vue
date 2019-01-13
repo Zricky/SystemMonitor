@@ -17,8 +17,8 @@ export default {
       terminal: {
         pid: 1,
         name: 'terminal',
-        cols: 400,
-        rows: 400
+        cols: 500,
+        rows: 500
       }
     }
   }
@@ -28,8 +28,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped>
   .xterm-container{
-    margin:10px;
-    width: 50%;
+    margin:20px;
+    width: 80%;
     height: auto;
   }
 </style>

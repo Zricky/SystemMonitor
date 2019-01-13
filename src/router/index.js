@@ -3,11 +3,12 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-// import Layout from 'layout/Layout'
+import Layout from 'layout/Layout'
 import DashBoard from './dashboard/'
 import Table from './table/'
 import Charts from './charts/'
 import Terminal from './xterm/'
+import ItChat from './itchat/'
 /**
 * hidden: true                   if `hidden:true` will not show in the sidebar(default is false)
 * alwaysShow: true               if set true, will always show the root menu, whatever its child routes length
@@ -24,7 +25,8 @@ export const constantRouterMap = [
   Terminal,
   DashBoard,
   Charts,
-  Table
+  Table,
+  ItChat,
   // { path: '/login', components: () => import('@/views/login/index'), hidden: true },
   // { path: '/404', components: () => import('@/views/404'), hidden: true },
   //
@@ -133,16 +135,16 @@ export const constantRouterMap = [
   //   ]
   // },
   //
-  // {
-  //   path: 'external-link',
-  //   components: Layout,
-  //   children: [
-  //     {
-  //       path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-  //       meta: { title: 'External Link', icon: 'link' }
-  //     }
-  //   ]
-  // },
+  {
+    path: 'external-link',
+    components: Layout,
+    children: [
+      {
+        path: 'https://120.79.53.126:10086/tree',
+        meta: { title: 'Jupyter Notebook', icon: 'link' }
+      }
+    ]
+  }
   //
   // { path: '*', redirect: '/404', hidden: true }
 ]
